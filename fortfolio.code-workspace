@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "name": "fortfolio",
+      "path": "../../../../멀티미디어/VS Code/web-page/fortfolio"
+    },
+    {
+      "name": "c-1",
+      "path": "../../../../멀티미디어/VS Code/web-structure/c-1"
+    },
+    {
+      "name": "responsive-page",
+      "path": "../../../../멀티미디어/VS Code/web-page/responsive-page"
+    },
+    {
+      "path": "../../web-structure/b-1"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "fortfolio"
+  }
+}
