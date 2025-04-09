@@ -85,7 +85,7 @@
           <ul class="sidemenu">
             <li>
               <div class="flxsidmenu">
-                <div class="imgbox">
+                <div class="imgbox" data-target="#title">
                   <img src="image/myimg.png" alt="자기소개" />
                 </div>
                 <div class="textbox">
@@ -96,7 +96,7 @@
             </li>
             <li>
               <div class="flxsidmenu">
-                <div class="imgbox">
+                <div class="imgbox" data-target="#career">
                   <img src="image/img-01.png" alt="경력사항" />
                 </div>
                 <div class="textbox">
@@ -107,7 +107,7 @@
             </li>
             <li>
               <div class="flxsidmenu">
-                <div class="imgbox">
+                <div class="imgbox" data-target="#edit">
                   <img src="image/img-02.png" alt="포트폴리오" />
                 </div>
                 <div class="textbox">
@@ -118,7 +118,7 @@
             </li>
             <li>
               <div class="flxsidmenu">
-                <div class="imgbox">
+                <div class="imgbox" data-target="#footer">
                   <img src="image/img-03.png" alt="연락하기" />
                 </div>
                 <div class="textbox">
@@ -132,14 +132,16 @@
 
         <!-- main-content -->
         <div class="content">
-          <div class="main-banner">
+          <div id="title" class="main-banner">
             <div class="banner-text">
               <a href="#1">
                 <!-- <img src="image/67OE6rO87IKs7J207ZSE65s7Iqk64KY66y06rCA7J6I64qU6ri4 복사본.jpg" alt="img-1" /> -->
-                <span>첫 번재 이미지입니다.</span>
+                <span
+                  >취미로 시작했던 예술의 길에서 기술의 길로 나아갑니다.
+                </span>
               </a>
               <div class="shorcut">
-                <a href="#">
+                <a href="https://youtu.be/eg-VJCv7wMU?si=ZccP3baYyRVMEfYI">
                   <i class="fa-brands fa-square-youtube"></i>
                 </a>
                 <a href="#">
@@ -152,14 +154,24 @@
             </div>
           </div>
           <div class="sliding-banner">
-            <p>Premier Pro</p>
-            <p>After Effects</p>
-            <p>Figma</p>
-            <p>VS Code</p>
-            <p>Resolume Arena</p>
-            <p>Live Strming</p>
-            <p>VMIX</p>
-            <p>ZOOM</p>
+            <div class="sliding-track">
+              <span>Premiere Pro</span>
+              <span>After Effects</span>
+              <span>Figma</span>
+              <span>VS Code</span>
+              <span>Resolume Arena</span>
+              <span>Prejection Mapping</span>
+              <span>Live Streaming</span>
+
+              <!-- 반복을 위한 복제 -->
+              <span>Premiere Pro</span>
+              <span>After Effects</span>
+              <span>Figma</span>
+              <span>VS Code</span>
+              <span>Resolume Arena</span>
+              <span>Prejection Mapping</span>
+              <span>Live Streaming</span>
+            </div>
           </div>
           <div class="visual-banner">
             <iframe
@@ -174,7 +186,7 @@
             >
             </iframe>
           </div>
-          <div class="career-banner">
+          <div id="career" class="career-banner">
             <div class="career-content">
               <div class="career-left">
                 <ul>
@@ -197,7 +209,7 @@
               </div>
             </div>
           </div>
-          <div class="edit-banner">
+          <div id="edit" class="edit-banner">
             <div class="edit-menu">
               <section id="section-1">
                 <div class="motion-tab">
@@ -213,27 +225,209 @@
                   <i class="fa-solid fa-arrow-down"></i>
                 </div>
               </section>
-              <section id="section-2">
+              <section id="section-2" class="hidden">
                 <div class="motion-list">
                   <ul>
                     <li>
-                      <a href="#"
-                        >썸네일-1
-                        <img src="image/img-05.png" alt="썸네일-01" />
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-05.png" alt="썸네일-01" />
+                          <div class="overlay">
+                            <span>01</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
                       </a>
-                      <span>01</span>
-                      <h4>타이틀: 영상제목</h4>
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quis commodi nesciunt consectetur velit provident
-                        perferendis nulla dicta asperiores, dolore vel voluptas
-                        corporis unde pariatur ea laborum tempore nostrum quod
-                        aliquam.
-                      </p>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-06.png" alt="썸네일-02" />
+                          <div class="overlay">
+                            <span>02</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-07.png" alt="썸네일-03" />
+                          <div class="overlay">
+                            <span>03</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </section>
+              <section id="section-3" class="hidden">
+                <div class="rec-list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-08.png" alt="썸네일-04" />
+                          <div class="overlay">
+                            <span>04</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-09.png" alt="썸네일-05" />
+                          <div class="overlay">
+                            <span>05</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-10.png" alt="썸네일-06" />
+                          <div class="overlay">
+                            <span>06</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <section id="section-4" class="hidden">
+                <div class="code-list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-011.png" alt="썸네일-07" />
+                          <div class="overlay">
+                            <span>07</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-11.png" alt="썸네일-08" />
+                          <div class="overlay">
+                            <span>08</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="thumbnail-wrap">
+                          <img src="image/img-11.png" alt="썸네일-09" />
+                          <div class="overlay">
+                            <span>09</span>
+                            <h4>타이틀: 영상 제목</h4>
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur. Nisl
+                              pulvinar amet blandit in non justo. Non urna
+                              habitant tristique ut condimentum fames pharetra
+                              at.
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <div id="footer" class="contact-card">
+            <div class="contact-section">
+              <div class="contact-label">Name</div>
+              <div class="contact-value">Name</div>
+            </div>
+
+            <div class="contact-section">
+              <div class="contact-label">E-mail</div>
+              <div class="contact-value">E-mail@email.com</div>
+            </div>
+
+            <div class="contact-section">
+              <div class="contact-label">Message</div>
+              <div class="contact-value">
+                Lorem ipsum dolor sit amet consectetur. Eleifend fermentum purus
+                tempor et nibh. Habitasse enim leo lacus luctus arcu integer
+                massa natoque.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 모달 -->
+        <div id="videoModal" class="video-modal hidden">
+          <div class="modal-inner">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content">
+              <h2 class="modal-title">영상 제목</h2>
+              <p class="modal-desc">영상에 대한 설명이 여기에 표시됩니다.</p>
             </div>
           </div>
         </div>
